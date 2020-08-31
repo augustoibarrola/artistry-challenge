@@ -1,0 +1,12 @@
+<h1><%= @artist.name %></h1>
+<br>
+<em><%= @artist.name %> is <%= @artist.age %> years old and plays the following <%= @artist.instrument_count %> instruments:</em></b>
+<br>
+<% @artist.instruments.each do |i| %><br>   
+    <br>
+    <%= i.name %>
+<% end %><br>
+<br>
+<hr>
+<br>
+<%= button_to "All Artists", artists_path, method: :get%>

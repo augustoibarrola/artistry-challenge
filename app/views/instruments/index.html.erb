@@ -1,0 +1,9 @@
+<% @instruments.each do |i| %><br>
+    <br>
+    <b>Name:</b> <%= i.name%><br>
+    <b>Classication:</b> <%= i.classification%><br>
+<% end %><br>
+<br>
+<hr>
+<br>
+<%= button_to "All Artists", artists_path, method: :get%>
